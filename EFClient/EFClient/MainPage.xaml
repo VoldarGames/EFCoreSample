@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EFClient"
+             x:Class="EFClient.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+    	<Label Text="{Binding Name}" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Entry Placeholder="Ip address..." Text="{Binding Ip}"/>
+        <Entry Placeholder="Id to search..." Text="{Binding SearchId}"/>        
+        <Button Text="Connect!" Command="{Binding ConnectCommand}"></Button>
+    </StackLayout>
+
+</ContentPage>
